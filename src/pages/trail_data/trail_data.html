@@ -1,0 +1,21 @@
+<ion-content padding>
+  <ion-list>
+      <ion-card *ngFor="let trail of trails"   type="button" 
+      (click)="loadInfo(trail.latitude, trail.longitude, trail.type,
+      trail.summary, trail.difficulty, trail.stars, trail.starVotes,
+      trail.location, trail.name, trail.conditionStatus, trail.length,
+      trail.ascent, trail.descent, trail.high, trail.low, trail.conditionDetails,
+      trail.conditionDate, trail.id)">
+        <img id='Image' src="{{trail.imgSmallMed}}">
+        <ion-item>
+          <h2>{{trail.name}}</h2>
+          <p>{{trail.summary}}</p>
+          <p>{{trail.location}}</p>
+        </ion-item>
+        <ion-item>
+          <span item-start>{{trail.conditionStatus}}</span>
+          <span item-start>({{trail.length}} Miles)</span>
+        </ion-item>
+      </ion-card>
+  </ion-list>
+</ion-content>

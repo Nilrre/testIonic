@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+      <ion-title>Jaunt</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button (click)="filterSettings()">
+    <ion-icon name="funnel">
+      Filter
+    </ion-icon>
+  </button>
+  <page-trails #trails>
+
+  </page-trails>
+</ion-content>

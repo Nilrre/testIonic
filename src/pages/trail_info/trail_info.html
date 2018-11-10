@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+      <ion-title>Jaunt</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div id='map'></div>
+  <h1>{{name}}</h1>
+  <h2>Location: {{location}}</h2>
+  <h3>Type: {{type}}</h3>
+  <h3>Summary: {{summary}}</h3>
+  <p>Difficulty: {{difficulty}}</p>
+  <p>Rating: {{stars}} ({{starVotes}})</p>
+  <p>Trail Length: {{length}} Miles</p>
+  <p>Highest Point: {{high}} Ft.</p>
+  <p>Lowest Point: {{low}} Ft.</p>
+  <p>Status: {{conditionStatus}}</p>
+  <p>Details: {{conditionDetails}} on {{conditionDate}}</p>
+</ion-content>
